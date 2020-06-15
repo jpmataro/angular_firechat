@@ -1,5 +1,9 @@
-<ul>
-  <li class="text" *ngFor="let chat of chats | async">
-    {{chat.message}}
-  </li>
-</ul>
+<div class="container chat mt-4">
+  <div class="col-md-12 text-right" *ngIf="_cs.user.uid">
+    <button type="button" class="btn btn-outline-danger" (click)="_cs.logout()">
+      Logout
+    </button>
+  </div>
+  <app-chat *ngIf="_cs.user.uid"></app-chat>
+  <app-login *ngIf="!_cs.user.uid"></app-login>
+</div>

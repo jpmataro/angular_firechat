@@ -1,0 +1,25 @@
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #5b41da transparent;
+}
+  
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #5b41da;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.chat {
+    border: 2px solid #5b41da;
+    border-radius: 6px;
+    padding: 1rem;
+}
